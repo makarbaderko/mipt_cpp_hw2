@@ -1,0 +1,9 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "code-runner.executorMap": {
+    "cpp": "cd \"$workspaceRoot\" && cmake -S . -B build && cmake --build build --target fizkat && ./build/fizkat"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.ignoreSelection": true
+}

@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ФизКат: сборка",
+      "type": "shell",
+      "command": "cmake -S . -B build && cmake --build build --target fizkat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "ФизКат: запуск",
+      "type": "process",
+      "command": "${workspaceFolder}/build/fizkat",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "ФизКат: сборка",
+      "problemMatcher": [],
+      "presentation": {
+        "focus": true,
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

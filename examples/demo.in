@@ -1,0 +1,24 @@
+show_focus
+add scooter S-1 ModelX 2.5 8
+add scooter S-2 ModelY 1.5 6
+add bike B-1 City 4
+add ebike E-1 Electro 3.0 7
+add helmet H-1 Pro
+add dock D-1 Hub 10.0
+add skateboard K-1 Street 5
+add bike B-2 bRoKeN 9
+report
+energy
+list
+novice
+count_novice
+focus S-1
+show_focus
+remove S-1
+show_focus
+add scooter S-1 Replacement 1.0 10
+show_focus
+focus S-1
+show_focus
+report
+quit
